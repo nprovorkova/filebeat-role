@@ -1,3 +1,4 @@
+server.host: 0.0.0.0
 output.elasticsearch:
   hosts: ["http://{{ hostvars['netology-elastic']['ansible_facts']['default_ipv4']['address'] }}:9200"]
 setup.kibana:
