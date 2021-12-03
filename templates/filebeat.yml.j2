@@ -3,3 +3,4 @@ output.elasticsearch:
 setup.kibana:
    hosts: "http://{{ hostvars['netology-kibana']['ansible_facts']['default_ipv4']['address'] }}:5601"
 filebeat.config.modules.path: ${path.config}/modules.d/*.yml
+setup.ilm.overwrite: true
