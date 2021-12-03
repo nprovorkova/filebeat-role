@@ -31,4 +31,4 @@
     chdir: /usr/share/filebeat/bin
   register: filebeat_setup
   changed_when: false
-  until: filebeat_setup is succeededs
+  until: filebeat_setup is succeeded
